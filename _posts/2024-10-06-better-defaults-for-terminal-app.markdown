@@ -15,6 +15,8 @@ I switched to "Pro" profile from "Basic" profile.
 
 To make the switch, go to `Preferences > Profiles` and select "Pro" profile, and click on `Default` in the bottom.
 
+Pro has a translucent background. You might want to make it opaque. `Preferences > Profiles > Text` and click on `Color & Effects` and set Opacity to 100%.
+
 I like the "Pro" profile because it has dark theme.
 
 
