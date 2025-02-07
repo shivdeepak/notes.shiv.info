@@ -30,9 +30,9 @@ Note that more images are available on [Docker Hub](https://hub.docker.com/), an
 Two more things to consider:
 
 - All the above images could be downloaded with `latest` tag, but I don't prefer that approch because I like to lock image versions, which ensure that dependecies don't break.
-- I also try to not use unofficial images on dockerhub because they tend not to be actively maintained, and also could be a security risk.
+- I also try to not use unofficial images on dockerhub because they tend not to be actively maintained, and also could have security vulnerabilities, malicious or not.
 
-So, once you pick you image, you can use that as your base image, and add customizations.
+So, once you pick your image, you can use that as your base image, and add further customizations.
 
 Here is a sample template to get started:
 
