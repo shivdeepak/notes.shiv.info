@@ -2,7 +2,7 @@
 layout: post
 title:  "Mapping CapsLock to Control"
 date:   2025-02-06 18:25:39 -0700
-categories: capslock, control, mapping, programming
+categories: devex
 ---
 
 I spend a lot of time typing. I could be emails, tech specs, code, commands on the terminal -- you get the point.

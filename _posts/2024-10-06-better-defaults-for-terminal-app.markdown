@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Better Defaults Terminal App"
+title:  "Better Defaults for Terminal App"
 date:   2024-10-06 21:21:39 -0700
-categories: terminal macos cli
+categories: devex
 ---
-I have started to prefer [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)) over [iTerm2](https://iterm2.com/) 
+I have started to prefer [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)) over [iTerm2](https://iterm2.com/)
 because of the latest updates of iTerm2 have increased UI clutter.
 
 Here are the configurations I would do a new Terminal.app to make it fit into my workflow.
@@ -23,7 +23,7 @@ Here are the configurations I would do a new Terminal.app to make it fit into my
 2. Use Option (⌥) as Meta Key
 
     Go to `Preferences > Profiles > Keyboard` and check `Use Option as Meta key` option.
- 
+
     This lets you use Option (⌥) as a meta key which gives richer readline shortcuts which wouldn't be possible otherwise.
 
 

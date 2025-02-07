@@ -2,7 +2,7 @@
 layout: post
 title:  "Better Defaults iTerm 2"
 date:   2024-08-09 21:45:39 -0700
-categories: iterm2 macos cli
+categories: devex
 ---
 [iTerm2](https://iterm2.com/) is a near perfect [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)) replacement for MacOS.
 

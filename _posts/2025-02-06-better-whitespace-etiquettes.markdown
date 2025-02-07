@@ -2,7 +2,7 @@
 layout: post
 title:  "Better Whitespace Etiquettes"
 date:   2025-02-06 17:52:39 -0700
-categories: whitespace, vscode, programming
+categories: devex
 ---
 
 I can't tell how many times I've come across codebases where hidden or missing

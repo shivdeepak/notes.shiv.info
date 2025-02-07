@@ -2,7 +2,7 @@
 layout: post
 title:  "Harden Cloud Linux Server"
 date:   2025-02-06 18:21:39 -0700
-categories: linux, cloud, security, ssh, openssh
+categories: security
 ---
 
 I often spawn a cloud linux server to test out new ideas. But always worry about
