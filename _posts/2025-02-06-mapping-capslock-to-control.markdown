@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mapping CapsLock to Control on Linux"
+title:  "Mapping CapsLock to Control"
 date:   2025-02-06 18:25:39 -0700
 categories: capslock, control, mapping, programming
 ---
@@ -25,3 +25,7 @@ So, it's a lot more comforatble to have `Control` on the home row. Moreover, I d
 all, so if it gets pressed accidentally, it's annoying.
 
 So, remapping `CapsLock` to `Control` is a great way to make my life easier.
+
+## How to do it
+
+On Mac, go to "System Settings" -> "Keyboard" -> "Keyboard Shortcuts" -> "Modifier Keys" and remap `CapsLock` to `Control`.
