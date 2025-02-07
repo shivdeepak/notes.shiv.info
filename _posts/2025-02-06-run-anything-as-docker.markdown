@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Run anything as Docker container"
+title:  "Run anything as a Docker container"
 date:   2025-02-06 21:40:39 -0700
 categories: devex
 ---
