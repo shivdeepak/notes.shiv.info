@@ -10,12 +10,12 @@ security of these servers because if you leave a publicly available server onlin
 even for a few hours, you'll start to see a lot of failed login attempts from IPs
 all over the world.
 
-So, when a launch a linux server on the cloud I follow the following setups:
+So, when I launch a linux server on the cloud, I follow the following setups:
 
 ## Disable Passwords
 
-I always double check the following sshd configuration options. You should only login
-with SSH keys, and not passwords.
+I always double check the following sshd configuration options. I only login
+with SSH keys, and not with passwords or any other authentication methods.
 
 ```bash
 # Disable root login
@@ -40,8 +40,9 @@ If the server is going to be running for a while, then I change the SSH port.
 Port 2222 # Some Random Port Above 1024
 ```
 
-Ofcouse, a persistent hacker can still scan the ports, but this will mitigate
-bots attacks that try to brute force the default port.
+Ofcouse, a commited hacker can still scan the ports, but this will atleast mitigate
+automated bots attacks, that try to brute force the default port -- the primary
+attack vector I am trying to mitigate.
 
 ## Setup Firewall
 
