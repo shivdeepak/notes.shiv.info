@@ -106,5 +106,54 @@ depending on how frequently I use docker, I usually run a full clean up to free
 up disk space. This also sometimes addresses unexplinable errors during docker builds.
 
 ```bash
-docker system prune --all
+docker system prune -a
+```
+
+## 5. Push the image to a registry
+
+Sometimes you might want to push your image to a container registry so that other people can use it.
+
+For public images, you can use [Docker Hub](https://hub.docker.com/) because it is indexed on search engines, and for 
+private images, there are several options, you can use [GitHub Container Registry](https://github.com/features/packages),
+or [AWS ECR](https://aws.amazon.com/ecr/), or [Google Container Registry](https://cloud.google.com/container-registry).
+
+**How to push to Docker Hub:**
+
+```bash
+export DOCKER_USERNAME=my-username
+docker login
+docker tag my-image:latest ${DOCKER_USERNAME}/my-image:latest
+docker push ${DOCKER_USERNAME}/my-image:latest
+```
+
+**How to push to GitHub Container Registry:**
+
+Goto [https://github.com/settings/tokens/new?scopes=write:packages](https://github.com/settings/tokens/new?scopes=write:packages)
+to create a new Private Access Token with `write:packages` only scope.
+
+```bash
+export CR_PAT=<YOUR_PRIVATE_ACCESS_TOKEN>
+export GITHUB_USERNAME=<YOUR_GITHUB_USERNAME>
+echo $CR_PAT | docker login ghcr.io -u ${GITHUB_USERNAME} --password-stdin
+```
+
+```bash
+docker tag my-image:latest ghcr.io/${GITHUB_USERNAME}/my-image:latest
+docker push ghcr.io/${GITHUB_USERNAME}/my-image:latest
+```
+
+**How to push to AWS ECR:**
+
+```bash
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin XXXXXX.dkr.ecr.us-east-1.amazonaws.com
+docker tag my-image:latest XXXXXX.dkr.ecr.us-east-1.amazonaws.com/my-image:latest
+docker push XXXXXX.dkr.ecr.us-east-1.amazonaws.com/my-image:latest
+```
+
+**How to push to Google Container Registry:**
+
+```bash
+gcloud auth configure-docker
+docker tag my-image:latest gcr.io/my-project/my-image:latest
+docker push gcr.io/my-project/my-image:latest
 ```
