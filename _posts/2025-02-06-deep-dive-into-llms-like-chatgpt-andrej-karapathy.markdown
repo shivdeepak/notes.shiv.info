@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deep dive into LLMs like ChatGPT (Andrej Karpathy)"
-date:   2025-02-06 21:40:39 -0700
+date:   2025-02-08 13:06:39 -0700
 categories: ai
 ---
 
