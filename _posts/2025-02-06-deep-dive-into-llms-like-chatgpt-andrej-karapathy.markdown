@@ -70,4 +70,9 @@ which the model has not seen during training phase, and is added during post-tra
 
 This is from OpenAI's Instruct GPT paper [Training language models to follow instructions with human feedback](https://arxiv.org/pdf/2203.02155).
 
+OpenAI didn't release the post-training data for Instruct GPT, but there are some open datasets available. 
+One such dataset is [Open Assistant](https://huggingface.co/datasets/OpenAssistant/oasst1). Another such dataset is [UltraChat](https://github.com/thunlp/UltraChat), that
+uses Generative AI to create post-training dataset.
+
+
 -- WORK IN PROGRESS --
