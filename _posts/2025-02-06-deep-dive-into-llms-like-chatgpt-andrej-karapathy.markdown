@@ -9,7 +9,7 @@ Andrej Karpathy made a 3.5 hour long video about how LLMs like ChatGPT work. It'
 
 It has a treasure trove of information, but it's a very long video, so I wanted to summarize the key points here so that I don't have to watch the whole thing again.
 
-###Section 1: Training Data
+### Section 1: Training Data
 
 LLMs are trained on a large corpus of text data. This is usually proprietary and not released to the public. But there are some open source corpora available.
 
