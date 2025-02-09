@@ -5,7 +5,7 @@ date:   2025-02-08 13:06:39 -0700
 categories: ai
 ---
 
-Andrej Karpathy made a 3.5 hour long video about how LLMs like ChatGPT work. It's a great video for understanding the inner workings of LLMs.
+Andrej Karpathy made a [3.5 hour long video](https://www.youtube.com/watch?v=7xTGNNLPyMI) about how LLMs like ChatGPT work. It's a great video for understanding the inner workings of LLMs.
 
 It has a treasure trove of information, but it's a very long video, so I wanted to summarize the key points here so that I don't have to watch the whole thing again.
 
@@ -13,13 +13,13 @@ It has a treasure trove of information, but it's a very long video, so I wanted 
 
 LLMs are trained on a large corpus of text data. This is usually proprietary and not released to the public. But there are some open source corpora available.
 
-He recommends [FineWeb](https://huggingface.co/datasets/HuggingFaceFW/fineweb) as a good source for training data freely available. 
-It's built out of [Common Crawl](https://commoncrawl.org/) data that is cleaned and preprocessed. Read this 
+He recommends [FineWeb](https://huggingface.co/datasets/HuggingFaceFW/fineweb) as a good source for training data freely available.
+It's built out of [Common Crawl](https://commoncrawl.org/) data that is cleaned and preprocessed. Read this
 [article](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1) about what went into building this dataset.
 
 _Some stats:_
 
-**Raw Data:** 2.7 billion web pages, totaling 386 TiB of uncompressed HTML text content 
+**Raw Data:** 2.7 billion web pages, totaling 386 TiB of uncompressed HTML text content
 
 **Preprocessed Data:** 15-trillion tokens, 44TB disk space
 
@@ -29,7 +29,7 @@ Next, you take the raw text data and tokenize it. He used this [website](https:/
 to demonstrate how tokenization works.
 
 Basically, you take the text and break it into tokens. Each token is assigned a unique integer id. Tokens are not characters, nor words, but are like
-chunk of characters, that often show up in text. 
+chunk of characters, that often show up in text.
 
 
 ### Section 3: Training
@@ -38,7 +38,7 @@ Then he spoke about how LLMs are trained using a neural network, mainly a transf
 it's a token predictor. It is trained to take a sequence of tokens and predict the next token. In a way, it could be said that it's a document completor.
 
 Given that it's a very large neural network which can have billions of parameters, and given that the training data is so huge, that training this entire
-model required a lot of compute. Since this work can be parallelized, we use GPUs to train the model. 
+model required a lot of compute. Since this work can be parallelized, we use GPUs to train the model.
 
 He also covered the advancement of technology over the last few years, that had brought down the cost of training these models. For example, training GPT-2
 is estimated to have cost around $40K, but today he could [train a similar model with $672](https://github.com/karpathy/llm.c/discussions/677), and that too
@@ -54,8 +54,8 @@ an AI assistant, you need post-training, which is covered in the next section.
 Building the base model is very expensive, but once you have it, post-training is relatively cheap. So, it is a good idea to use a existing base model, and then
 post-train it for a specific use-case.
 
-There are several open source base models. He used [Llama 3.1 405B BF16](https://huggingface.co/meta-llama/Llama-3.1-405B) ([Meta's Llama 3.1 Announcement](https://ai.meta.com/blog/meta-llama-3-1/), 
-[Meta's Llama 3 Paper](https://arxiv.org/abs/2407.21783)) as the base model for this tutorial. And he used [Hyperbolic](https://www.hyperbolic.xyz/blog/llama-3-1-405b-base-bf16) 
+There are several open source base models. He used [Llama 3.1 405B BF16](https://huggingface.co/meta-llama/Llama-3.1-405B) ([Meta's Llama 3.1 Announcement](https://ai.meta.com/blog/meta-llama-3-1/),
+[Meta's Llama 3 Paper](https://arxiv.org/abs/2407.21783)) as the base model for this tutorial. And he used [Hyperbolic](https://www.hyperbolic.xyz/blog/llama-3-1-405b-base-bf16)
 to demo the base model and it's capabilities.
 
 ### Section 4: Document Completors to AI Assistants
@@ -70,7 +70,7 @@ which the model has not seen during training phase, and is added during post-tra
 
 This is from OpenAI's Instruct GPT paper [Training language models to follow instructions with human feedback](https://arxiv.org/pdf/2203.02155).
 
-OpenAI didn't release the post-training data for Instruct GPT, but there are some open datasets available. 
+OpenAI didn't release the post-training data for Instruct GPT, but there are some open datasets available.
 One such dataset is [Open Assistant](https://huggingface.co/datasets/OpenAssistant/oasst1). Another such dataset is [UltraChat](https://github.com/thunlp/UltraChat), that
 uses Generative AI to create post-training dataset.
 
