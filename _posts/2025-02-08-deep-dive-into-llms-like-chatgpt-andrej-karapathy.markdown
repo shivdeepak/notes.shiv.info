@@ -74,5 +74,9 @@ OpenAI didn't release the post-training data for Instruct GPT, but there are som
 One such dataset is [Open Assistant](https://huggingface.co/datasets/OpenAssistant/oasst1). Another such dataset is [UltraChat](https://github.com/thunlp/UltraChat), that
 uses Generative AI to create post-training dataset.
 
-
 -- WORK IN PROGRESS --
+
+SFT Dataset (Supervised Fine-Tuning Dataset) is a dataset of input/output pairs, that is used to train the model to act a certain way.
+
+Knowledge in the parameters == Vague recollection (eg: of something you read 1 month ago)
+Knowledge in the tokens of the context window == Working Memory
