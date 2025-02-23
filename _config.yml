@@ -23,7 +23,8 @@ title: Shiv's Notes
 description: >- # this means to ignore newlines until "baseurl:"
   Notes about frequently used commands and tools.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://notes.shiv.info" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: pretty
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
