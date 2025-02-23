@@ -21,7 +21,9 @@
 title: Shiv's Notes
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Notes about frequently used commands and tools.
+  Welcome to Shiv's Notes. I usually post instructions about tools and commands I use
+  frequently, and sometimes other stuff. Topics are usually related to software development
+  with emphasis on setting up a productive development environment.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://notes.shiv.info" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
