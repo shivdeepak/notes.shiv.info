@@ -32,7 +32,9 @@ permalink: pretty
 
 # Build settings
 theme: minima
+safe: false
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
 
 google_analytics: G-905NVS4ZR4
