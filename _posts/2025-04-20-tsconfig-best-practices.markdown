@@ -229,7 +229,7 @@ For monorepos with both Node.js backend and browser frontend, use separate `tsco
 - Using a shared base configuration ensures consistency for common rules
 - Environment-specific configurations can then fine-tune settings like `target`, `module`, and `moduleResolution` for each specific runtime context
 
-## Pro Tips for TypeScript Configuration
+### Pro Tips for TypeScript Configuration
 
 1. **Tree-Shaking**: Always include `"sideEffects": false` in your `package.json` for libraries to enable tree-shaking in bundlers
 2. **Module Resolution**: Use `moduleResolution: "Bundler"` for projects using modern bundlers, and `NodeNext` for Node.js projects
