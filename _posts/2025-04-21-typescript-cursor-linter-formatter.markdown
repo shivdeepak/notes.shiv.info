@@ -178,7 +178,7 @@ dist
 
 **3.3. Update ESLint Configuration**
 
-Update your `.eslintrc.js` file to include Prettier:
+Update your `.eslint.config.js` file to include Prettier:
 
 ```javascript
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
@@ -200,6 +200,7 @@ Add these scripts to your `package.json`:
 {
   // ...
   "scripts": {
+    // ...
     "lint": "eslint",
     "lint:fix": "eslint --fix",
   }
