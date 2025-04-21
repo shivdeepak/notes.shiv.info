@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "TypeScript Configuration Recommendations"
-date:   2025-04-19 19:14:39 -0700
+title:  "TypeScript configuration best practices"
+date:   2025-04-20 23:38:39 -0700
 categories: JavaScript
 ---
 
