@@ -24,3 +24,22 @@ That's it! Your Option key will now function as the Alt/Meta key in Cursor's int
 ### What This Does
 
 This setting instructs Cursor to treat the Option key as the Meta key (which is equivalent to Alt in many terminal applications). This means keyboard combinations like `⌥ + b` or `⌥ + f` will now work as expected for moving backward or forward by words in the terminal.
+
+### Bonus Tip
+
+You can achieve the same behavior in the code editor by adding the following line to `keybindings.json` by going to "Open Keyboard Shortcuts (JSON)" from Command Palette.
+
+```
+[
+    {
+        "key": "alt+f",
+        "command": "cursorWordRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+b",
+        "command": "cursorWordLeft",
+        "when": "textInputFocus"
+    },
+]
+```
