@@ -1,26 +1,52 @@
 ---
 layout: post
-title:  "Set up Python 3.x on macOS"
+title:  "Set up Python, Ruby or Nodejs on macOS"
 date:   2024-09-11 08:10:39 -0700
-categories: python
+categories: devex
 ---
 
-macOS Sanoma comes with preinstalled Python3, but I like to use miniconda (a minimal version of anaconda)
-to manage my python installation.
+The best way to install Python, Ruby or Nodejs on macOS is through homebrew.
 
-Why? Because I can manage multiple Python environments i.e. different versions of Python and also different
-versions of Python Packages.
+Infact, homebrew almost always has the most recent stable versions of the languages.
 
-First, I will install `miniconda` from Homebrew.
+## Python
 
 ```shell
-brew install miniconda
+# Search for Available Versions
+brew search python
+
+# Install Python
+brew install python@3.13
 ```
 
-Then, add the following line in your `~/.zshrc` (your shell init file):
+## Ruby
 
 ```shell
-eval "$(conda "shell.$(basename "${SHELL}")" hook)"
+# Search for Available Versions
+brew search ruby
+
+# Install Ruby
+brew install ruby@3.3
 ```
 
-Now you can manage your Python installation on macOS with `conda`.
+## Nodejs
+
+```shell
+# Search for Available Versions
+brew search node
+
+# Install Nodejs
+brew install node@22
+```
+
+## Why Homebrew?
+
+Using Homebrew provides a consistent and predictable way to
+install and manage these languages.
+
+Homebrew also handles dependencies and ensures that the
+languages are installed in the correct locations. Moreover, other
+homebrew packages know where to find these languages.
+
+Also, when I configure my development environment in VS Code,
+I know where to find the exectuatble regardless of the language.
