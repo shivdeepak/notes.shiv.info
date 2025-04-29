@@ -5,13 +5,13 @@ date:   2025-04-29 12:27:39 -0700
 categories: vscode
 ---
 
-Containerization has revolutionized how we develop and deploy applications. Conatiners provide a consistent environments with flexible OS and package configurations across all development stages. While Kubernetes can containers in production, developers can use Docker for local development. 
+Containerization has revolutionized how we develop and deploy applications. Conatiners provide a consistent environments with flexible OS and package configurations across all development stages. While Kubernetes can run containers in production, developers can use Docker for local development. 
 
 Modern applications often require multiple services (like databases, caches, message queues, or seperate microservices) running simultaneously. [Docker Compose](https://docs.docker.com/compose/) excels at orchestrating these multi-container development environments, making it the go-to tool for local development workflows.
 
 Cursor (or any VS Code Equivalent) has a very nice integration with Docker Compose through [Microsoft's Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
 
-With Dev Containers, you could manage the docker compose stack from within Cursor. Moreover, you could also load the Cursor project inside docker containers, and Cursor's terminal shell (^ + ~) is spawned within the container, which is nice!
+With Dev Containers, you could manage the docker compose stack from within Cursor. Moreover, you could also load the Cursor project inside docker container, and Cursor's terminal shell (^ + ~) is spawned within the container, which is nice!
 
 To configure your project with Dev Containers, you need to create a `.devcontainer` directory in the root of your project. Inside this directory, you will place your `docker-compose.yml` file, and you create sub directories for individual services (if required).
 
@@ -41,24 +41,24 @@ Once you have a working Dev Containers setup. You should be able to use these Co
 1. (Re)opens the (current) folder in a container
     - ⌘ + ⇧ + P > `Dev Containers: Open Folder in Container`
     - ⌘ + ⇧ + P > `Dev Containers: Reopen in Container`
-    - `docker compose up -d`
+    - Equivalent to: `docker compose up -d`
 2. Open the current folder in Locally (exit Dev Container)
     - ⌘ + ⇧ + P > `Dev Containers: Reopen Folder Locally`
 3. Rebuilds the container without losing data
     - ⌘ + ⇧ + P > `Dev Containers: Rebuild Container`
-    - `docker compose build --no-cache && docker compose up -d`
+    - Equivalent to: `docker compose build --no-cache && docker compose up -d`
 4. Completely rebuilds the container and reopens it
     - ⌘ + ⇧ + P > `Dev Containers: Rebuild and Reopen in Container`
-    - `docker compose down && docker compose build --no-cache && docker compose up -d`
+    - Equivalent to: `docker compose down && docker compose build --no-cache && docker compose up -d`
 5. Stops the current container
     - ⌘ + ⇧ + P > `Dev Containers: Stop Container`
-    - `docker compose stop`
+    - Equivalent to: `docker compose stop`
 6. Attaches to an already running container
     - ⌘ + ⇧ + P > `Dev Containers: Attach to Running Container`
-    - `docker exec -it <container_id> bash`
+    - Equivalent to: `docker exec -it <container_id> bash`
 7. Opens the container's log file
-    -  ⌘ + ⇧ + P > `Dev Containers: Open Log File`
-    - `docker compose logs`
+    - ⌘ + ⇧ + P > `Dev Containers: Open Log File`
+    - Equivalent to: `docker compose logs`
 
 
 ### Bottomline
