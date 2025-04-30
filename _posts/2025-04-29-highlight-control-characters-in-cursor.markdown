@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to highlight control character in Cursor"
+title:  "How to highlight control characters in Cursor"
 date:   2025-04-29 12:05:39 -0700
 categories: vscode
 ---
