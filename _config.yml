@@ -37,6 +37,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
+include:
+  - _redirects
+
 google_analytics: G-905NVS4ZR4
 
 # Exclude from processing.

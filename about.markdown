@@ -1,7 +1,5 @@
 ---
-layout: page
-title: About
+layout: redirect
+redirect_to: https://shivdeepak.com/about/
 permalink: /about/
 ---
-
-Refer [Main Blog](https://shivdeepak.com/about/).
